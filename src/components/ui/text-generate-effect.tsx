@@ -55,7 +55,7 @@ export const TextGenerateEffect = ({
         clearInterval(intervalRef.current); // Clear the interval on unmount
       }
     };
-  }, [scope.current, animate, filter, duration]); // Depend on animate, filter, and duration
+  }, [scope.current, animate, filter, duration, startAnimation]); // Depend on animate, filter, and duration
 
   const renderWords = () => {
     return (
