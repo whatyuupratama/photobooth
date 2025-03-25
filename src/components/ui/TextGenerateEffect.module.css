@@ -1,0 +1,22 @@
+TextGenerateEffect.module.css .simpleShake {
+  animation: simpleShakeAnimation 0.3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes simpleShakeAnimation {
+  0% {
+    transform: translateX(0);
+  } /* Mulai di posisi awal */
+  25% {
+    transform: translateX(-3px);
+  } /* Geser sedikit ke kiri */
+  50% {
+    transform: translateX(3px);
+  } /* Geser sedikit ke kanan */
+  75% {
+    transform: translateX(-3px);
+  } /* Kembali ke kiri */
+  100% {
+    transform: translateX(0);
+  } /* Kembali ke posisi awal */
+}
